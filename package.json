@@ -1,8 +1,8 @@
 {
-  "name": "name",
-  "version": "1.2.0",
+  "name": "validate-nhs-number",
+  "version": "0.0.0-development",
   "private": true,
-  "description": "{{ description }}",
+  "description": "A simple NHS number validator",
   "main": "index.umd.js",
   "module": "index.esm.js",
   "typings": "index.d.ts",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "{{ url }}"
+    "url": "https://github.com/Samuel-Carnell/validate-nhs-number"
   },
   "keywords": [ ],
   "author": {
@@ -28,7 +28,7 @@
     "url": "https://github.com/Samuel-Carnell"
   },
   "license": "MIT",
-  "homepage": "{{ homepage }}",
+  "homepage": "https://github.com/Samuel-Carnell/validate-nhs-number",
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
