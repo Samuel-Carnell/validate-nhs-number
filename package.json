@@ -13,7 +13,7 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "size": "size-limit",
-    "spellcheck": "cspell \"{src/**/*.ts,docs/**/*.md}\"",
+    "spellcheck": "cspell \"{src/**/*.ts,docs/**/*.md}\" --exclude \"src/**/*.spec.ts\"  ",
     "release": "semantic-release",
     "commitlint": "commitlint"
   },
