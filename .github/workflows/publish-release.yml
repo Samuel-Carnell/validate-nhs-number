@@ -26,6 +26,7 @@ jobs:
   publish-docs:
     needs: publish-package
     name: Publish documentation
+    if: ${{ false }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

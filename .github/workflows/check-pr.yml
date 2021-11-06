@@ -48,6 +48,7 @@ jobs:
 
   build-docs:
     name: Build docs
+    if: ${{ false }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
