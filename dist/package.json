@@ -1,0 +1,21 @@
+{
+  "name": "validate-nhs-number",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A simple NHS number validator",
+  "main": "index.umd.js",
+  "module": "index.esm.js",
+  "typings": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Samuel-Carnell/validate-nhs-number"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Samuel Carnell",
+    "email": "samuel.carnell@outlook.com",
+    "url": "https://github.com/Samuel-Carnell"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Samuel-Carnell/validate-nhs-number"
+}

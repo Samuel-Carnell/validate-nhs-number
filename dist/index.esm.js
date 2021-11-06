@@ -1,0 +1,2 @@
+function n(n){if(Array.isArray(n)&&10===n.length&&n.every((n=>(n=>"number"==typeof n&&!isNaN(n)&&isFinite(n)&&n<10&&n>=0)(n))))return n;if("string"!=typeof n)return null;const r=n.replace(/\s/g,"");if(10!==r.length)return null;const t=r.split("").map((n=>parseInt(n)));return t.some((n=>isNaN(n)))?null:t}function r(r){const t=n(r);if(null===t)return!1;const e=t[9],u=function(n){const r=n.slice(0,9).map(((n,r)=>n*(11-(r+1)))).reduce(((n,r)=>n+r))%11%11;return r>0?11-r:0}(t);return 10!==u&&e===u}export default r;
+//# sourceMappingURL=index.esm.js.map
