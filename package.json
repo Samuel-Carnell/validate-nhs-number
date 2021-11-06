@@ -13,8 +13,6 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "size": "size-limit",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
     "spellcheck": "cspell \"{src/**/*.ts,docs/**/*.md}\"",
     "release": "semantic-release",
     "commitlint": "commitlint"

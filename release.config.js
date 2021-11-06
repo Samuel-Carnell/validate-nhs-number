@@ -21,26 +21,6 @@ module.exports = {
 			},
 		],
 		[
-			'@semantic-release/release-notes-generator',
-			{
-				preset: 'conventionalcommits',
-				parserOpts: commitParserOptions,
-				writerOpts: {
-					headerPartial: fs.readFileSync(
-						path.resolve(__dirname, './changelog/templates/header.hbs'),
-						'utf-8'
-					),
-				},
-			},
-		],
-		[
-			'@semantic-release/changelog',
-			{
-				changelogTitle: '# Changelog',
-				changelogFile: 'docs/CHANGELOG.md',
-			},
-		],
-		[
 			'@semantic-release/npm',
 			{
 				pkgRoot: 'dist',
@@ -55,7 +35,7 @@ module.exports = {
 		[
 			'@semantic-release/git',
 			{
-				assets: ['dist/**', 'docs/CHANGELOG.md', 'package.json'],
+				assets: ['dist/**', 'package.json'],
 				message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
 			},
 		],
