@@ -1,6 +1,6 @@
 {
   "name": "validate-nhs-number",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "A simple NHS number validator",
   "main": "index.umd.js",
