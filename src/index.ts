@@ -30,11 +30,10 @@ function parse(nhsNumber: unknown): number[] | null {
 }
 
 function calcCheckDigit(digits: number[]): number {
-	const total =
-		digits
-			.slice(0, 9)
-			.map((digit, ind) => digit * (11 - (ind + 1)))
-			.reduce((acc, cur) => acc + cur) % 11;
+	const total = digits
+		.slice(0, 9)
+		.map((digit, ind) => digit * (11 - (ind + 1)))
+		.reduce((acc, cur) => acc + cur);
 	const remainder = total % 11;
 	const checkDigit = remainder > 0 ? 11 - remainder : 0;
 	return checkDigit;
