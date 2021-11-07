@@ -1,12 +1,12 @@
-const isValidDigit = (digit: unknown): boolean => {
+function isValidDigit(digit: unknown): boolean {
 	return typeof digit === 'number' && !isNaN(digit) && isFinite(digit) && digit < 10 && digit >= 0;
-};
+}
 
 function parse(nhsNumber: unknown): number[] | null {
 	if (
 		Array.isArray(nhsNumber) &&
 		nhsNumber.length === 10 &&
-		nhsNumber.every((digit) => isValidDigit(digit))
+		nhsNumber.every((digit: unknown) => isValidDigit(digit))
 	) {
 		return nhsNumber;
 	}
@@ -22,7 +22,7 @@ function parse(nhsNumber: unknown): number[] | null {
 
 	const digits: number[] = withoutSpace.split('').map((digit: string): number => parseInt(digit));
 
-	if (digits.some((digit: number) => isNaN(digit))) {
+	if (digits.some((digit: number) => !isValidDigit(digit))) {
 		return null;
 	}
 
