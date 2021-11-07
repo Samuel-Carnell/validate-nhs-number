@@ -1,6 +1,6 @@
 {
   "name": "validate-nhs-number",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "private": true,
   "description": "A simple NHS number validator",
   "main": "index.umd.js",
@@ -21,7 +21,13 @@
     "type": "git",
     "url": "https://github.com/Samuel-Carnell/validate-nhs-number"
   },
-  "keywords": ["nhs number", "nhs", "validator", "validate", "validation"],
+  "keywords": [
+    "nhs number",
+    "nhs",
+    "validator",
+    "validate",
+    "validation"
+  ],
   "author": {
     "name": "Samuel Carnell",
     "email": "samuel.carnell@outlook.com",
