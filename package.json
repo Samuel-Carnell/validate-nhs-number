@@ -21,7 +21,7 @@
     "type": "git",
     "url": "https://github.com/Samuel-Carnell/validate-nhs-number"
   },
-  "keywords": [],
+  "keywords": ["nhs number", "nhs", "validator", "validate", "validation"],
   "author": {
     "name": "Samuel Carnell",
     "email": "samuel.carnell@outlook.com",
